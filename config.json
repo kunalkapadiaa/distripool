@@ -24,16 +24,16 @@
             "purgeInterval": 300
         },
         "redis": {
-            "host": "127.0.0.1",
+            "host": "52.58.87.96",
             "port": 6379
         }
     },
 
     "website": {
         "enabled": true,
-        "host": "0.0.0.0",
+        "host": "172.31.44.107",
         "port": 80,
-        "stratumHost": "cryppit.com",
+        "stratumHost": "172.31.44.107",
         "stats": {
             "updateInterval": 60,
             "historicalRetention": 43200,
@@ -46,13 +46,13 @@
     },
 
     "redis": {
-        "host": "127.0.0.1",
+        "host": "52.58.87.96",
         "port": 6379
     },
 
     "switching": {
         "switch1": {
-            "enabled": false,
+            "enabled": true,
             "algorithm": "sha256",
             "ports": {
                 "3333": {
@@ -68,8 +68,8 @@
             }
         },
         "switch2": {
-            "enabled": false,
-            "algorithm": "scrypt",
+            "enabled": true,
+            "algorithm": "sha256",
             "ports": {
                 "4444": {
                     "diff": 10,
@@ -84,8 +84,8 @@
             }
         },
         "switch3": {
-            "enabled": false,
-            "algorithm": "x11",
+            "enabled": true,
+            "algorithm": "sha256",
             "ports": {
                 "5555": {
                     "diff": 0.001,
@@ -102,7 +102,7 @@
     },
 
     "profitSwitch": {
-        "enabled": false,
+        "enabled": true,
         "updateInterval": 600,
         "depth": 0.90,
         "usePoloniex": true,
